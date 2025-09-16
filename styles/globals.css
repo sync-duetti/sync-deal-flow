@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    @apply bg-black text-white;
+}
+.container {
+    @apply max-w-7xl mx-auto px-4;
+}
+.card {
+    @apply bg-black/20 rounded-xl shadow-xl p-4 border border-stone-800;
+}
+.btn {
+    @apply inline-flex items-center justify-center rounded-lg px-3 py-2 border border-stone-800 bg-[#000] hover:bg-black;
+}
+.btn-primary {
+    @apply bg-blue-500 text-white border-stone-800 hover:bg-blue-700;
+}
+.input {
+    @apply w-full border bg-white border-stone-800 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-black/20 text-black;
+}
+.label {
+    @apply block text-sm font-medium mb-1;
+}
+.table {
+    @apply w-full text-sm;
+}
+.th,
+.td {
+    @apply text-left py-2 border-b border-white;
+}
+.badge {
+    @apply text-xs px-2 py-0.5 rounded-full bg-[#000] border border-stone-800;
+}
+.link {
+    @apply text-blue-400 hover:underline;
+}
+
+@font-face {
+    font-family: "Maax Unicase";
+    src: url(/public/fonts/MaaxUnicase.otf);
+}
+
+.maax {
+    font-family: "Maax Unicase";
+}
+
+.nunito {
+    font-family: "Nunito Sans";
+}
+
+.fullAgreement li {
+    margin-left: 1rem;
+    list-style-type: disc;
+}
